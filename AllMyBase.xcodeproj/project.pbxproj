@@ -13,8 +13,8 @@
 		79213562272C08F900483096 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213561272C08F900483096 /* Tests_macOSLaunchTests.swift */; };
 		79213563272C08F900483096 /* AllMyBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353B272C08F800483096 /* AllMyBaseApp.swift */; };
 		79213564272C08F900483096 /* AllMyBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353B272C08F800483096 /* AllMyBaseApp.swift */; };
-		79213565272C08F900483096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353C272C08F800483096 /* ContentView.swift */; };
-		79213566272C08F900483096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353C272C08F800483096 /* ContentView.swift */; };
+		79213565272C08F900483096 /* TimesheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353C272C08F800483096 /* TimesheetView.swift */; };
+		79213566272C08F900483096 /* TimesheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921353C272C08F800483096 /* TimesheetView.swift */; };
 		79213567272C08F900483096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7921353D272C08F900483096 /* Assets.xcassets */; };
 		79213568272C08F900483096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7921353D272C08F900483096 /* Assets.xcassets */; };
 		79213579272C0CDC00483096 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 79213578272C0CDC00483096 /* FirebaseFirestore */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7921353B272C08F800483096 /* AllMyBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyBaseApp.swift; sourceTree = "<group>"; };
-		7921353C272C08F800483096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7921353C272C08F800483096 /* TimesheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetView.swift; sourceTree = "<group>"; };
 		7921353D272C08F900483096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79213542272C08F900483096 /* AllMyBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllMyBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79213548272C08F900483096 /* AllMyBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllMyBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				7921353B272C08F800483096 /* AllMyBaseApp.swift */,
-				7921353C272C08F800483096 /* ContentView.swift */,
+				7921353C272C08F800483096 /* TimesheetView.swift */,
 				7921353D272C08F900483096 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79213565272C08F900483096 /* ContentView.swift in Sources */,
+				79213565272C08F900483096 /* TimesheetView.swift in Sources */,
 				79213563272C08F900483096 /* AllMyBaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79213566272C08F900483096 /* ContentView.swift in Sources */,
+				79213566272C08F900483096 /* TimesheetView.swift in Sources */,
 				79213564272C08F900483096 /* AllMyBaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

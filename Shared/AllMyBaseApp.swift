@@ -1,5 +1,6 @@
 import SwiftUI
 import Firebase
+import FirebaseFirestoreSwift
 
 @main
 struct AllMyBaseApp: App {
@@ -10,7 +11,12 @@ struct AllMyBaseApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      TimesheetView()
+        .task {
+          Firestore.firestore().collection("dump")
+            .document("Hello")
+            .setData(["value": "World!"])
+        }
     }
   }
 }
