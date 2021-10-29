@@ -1,17 +1,16 @@
-//
-//  AllMyBaseApp.swift
-//  Shared
-//
-//  Created by Petr Šíma on 29.10.2021.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct AllMyBaseApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+
+  init() {
+    FirebaseApp.configure()
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
