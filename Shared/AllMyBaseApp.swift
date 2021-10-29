@@ -12,11 +12,6 @@ struct AllMyBaseApp: App {
   var body: some Scene {
     WindowGroup {
       TimesheetView()
-        .task {
-          Firestore.firestore().collection("dump")
-            .document("Hello")
-            .setData(["value": "World!"])
-        }
     }
   }
 }

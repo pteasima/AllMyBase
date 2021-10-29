@@ -101,6 +101,15 @@
         }
       },
       {
+        "package": "Service",
+        "repositoryURL": "https://github.com/pteasima/Service.git",
+        "state": {
+          "branch": "main",
+          "revision": "c216e4770466ee10fbea172bc0b9d882b18886d7",
+          "version": null
+        }
+      },
+      {
         "package": "SwiftProtobuf",
         "repositoryURL": "https://github.com/apple/swift-protobuf.git",
         "state": {
