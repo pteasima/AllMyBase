@@ -35,8 +35,6 @@
 		7921359F272C25AF00483096 /* DocumentReference+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921359C272C25AF00483096 /* DocumentReference+Async.swift */; };
 		792135A0272C25AF00483096 /* Query+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921359D272C25AF00483096 /* Query+Async.swift */; };
 		792135A1272C25AF00483096 /* Query+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921359D272C25AF00483096 /* Query+Async.swift */; };
-		792135A8272C25D000483096 /* View+ThrowingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135A5272C25D000483096 /* View+ThrowingTask.swift */; };
-		792135A9272C25D000483096 /* View+ThrowingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135A5272C25D000483096 /* View+ThrowingTask.swift */; };
 		792135AB272C25ED00483096 /* Throw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135AA272C25ED00483096 /* Throw.swift */; };
 		792135AC272C25ED00483096 /* Throw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135AA272C25ED00483096 /* Throw.swift */; };
 		792135B0272C263200483096 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135AE272C263200483096 /* With.swift */; };
@@ -45,6 +43,9 @@
 		792135B3272C263200483096 /* Absurd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135AF272C263200483096 /* Absurd.swift */; };
 		792135B5272C266300483096 /* SimpleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135B4272C266300483096 /* SimpleError.swift */; };
 		792135B6272C266300483096 /* SimpleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135B4272C266300483096 /* SimpleError.swift */; };
+		792135BC272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */; };
+		792135BD272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */; };
+		792135C3272FEBD300483096 /* TaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135C2272FEBD300483096 /* TaskButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,11 +83,12 @@
 		79213597272C24D000483096 /* Foundation+SampleData.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+SampleData.swift.swift"; sourceTree = "<group>"; };
 		7921359C272C25AF00483096 /* DocumentReference+Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DocumentReference+Async.swift"; sourceTree = "<group>"; };
 		7921359D272C25AF00483096 /* Query+Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Query+Async.swift"; sourceTree = "<group>"; };
-		792135A5272C25D000483096 /* View+ThrowingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ThrowingTask.swift"; sourceTree = "<group>"; };
 		792135AA272C25ED00483096 /* Throw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throw.swift; sourceTree = "<group>"; };
 		792135AE272C263200483096 /* With.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
 		792135AF272C263200483096 /* Absurd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Absurd.swift; sourceTree = "<group>"; };
 		792135B4272C266300483096 /* SimpleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleError.swift; sourceTree = "<group>"; };
+		792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncThrowingSequence.swift; sourceTree = "<group>"; };
+		792135C2272FEBD300483096 /* TaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		79213596272C24BB00483096 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				792135BA272C2C8D00483096 /* StdLib */,
 				792135B4272C266300483096 /* SimpleError.swift */,
 				792135AD272C263200483096 /* FP */,
 				792135AA272C25ED00483096 /* Throw.swift */,
@@ -239,7 +242,7 @@
 		792135A3272C25D000483096 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				792135A5272C25D000483096 /* View+ThrowingTask.swift */,
+				792135C2272FEBD300483096 /* TaskButton.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -251,6 +254,14 @@
 				792135AF272C263200483096 /* Absurd.swift */,
 			);
 			path = FP;
+			sourceTree = "<group>";
+		};
+		792135BA272C2C8D00483096 /* StdLib */ = {
+			isa = PBXGroup;
+			children = (
+				792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */,
+			);
+			path = StdLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,11 +446,12 @@
 				792135AB272C25ED00483096 /* Throw.swift in Sources */,
 				7921359E272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				792135B2272C263200483096 /* Absurd.swift in Sources */,
+				792135C3272FEBD300483096 /* TaskButton.swift in Sources */,
 				792135B0272C263200483096 /* With.swift in Sources */,
 				792135A0272C25AF00483096 /* Query+Async.swift in Sources */,
 				7921358F272C1CAC00483096 /* WorkItem.swift in Sources */,
-				792135A8272C25D000483096 /* View+ThrowingTask.swift in Sources */,
 				79213598272C24D000483096 /* Foundation+SampleData.swift.swift in Sources */,
+				792135BC272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +468,8 @@
 				792135B1272C263200483096 /* With.swift in Sources */,
 				792135A1272C25AF00483096 /* Query+Async.swift in Sources */,
 				79213590272C1CAC00483096 /* WorkItem.swift in Sources */,
-				792135A9272C25D000483096 /* View+ThrowingTask.swift in Sources */,
 				79213599272C24D000483096 /* Foundation+SampleData.swift.swift in Sources */,
+				792135BD272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

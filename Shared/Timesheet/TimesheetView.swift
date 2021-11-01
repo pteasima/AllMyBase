@@ -13,8 +13,27 @@ struct AddWorkItem: EnvironmentKey {
   }
 }
 
+struct ObserveWorkItems: EnvironmentKey {
+  static var defaultValue: () -> AsyncThrowingStream<[WorkItem], Error> = {
+    Firestore.firestore()
+      .collection("workItems")
+      .observe()
+      .map { snapshot in
+        try snapshot.documents.compactMap { document in
+          try document.data(as: WorkItem.self)
+        }
+      }
+      .eraseToStream()
+
+  }
+}
+
+
+//TODO: use document ids properly
 struct TimesheetView: View {
+  @Environment(\.[key:\Throw.self]) private var `throw`
   @Environment(\.[key:\AddWorkItem.self]) private var addWorkItem
+  @Environment(\.[key:\ObserveWorkItems.self]) private var observeWorkItems
   @State private var workItems: [WorkItem] = []
   var body: some View {
     NavigationView {
@@ -24,12 +43,15 @@ struct TimesheetView: View {
         }
       }
       .toolbar {
-        Button {
-          Task {
-           try! await addWorkItem(.samples.0)
-          }
+        TaskButton {
+          try await addWorkItem(.samples.0)
         } label: {
           Text("+")
+        }
+      }
+      .throwingTask {
+        for try await items in observeWorkItems() {
+          workItems = items
         }
       }
     }
