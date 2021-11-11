@@ -46,6 +46,10 @@
 		792135BC272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */; };
 		792135BD272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */; };
 		792135C3272FEBD300483096 /* TaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135C2272FEBD300483096 /* TaskButton.swift */; };
+		796F6EEA273D49FB0000B863 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796F6EE9273D49FB0000B863 /* HomeKit.framework */; };
+		796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EEC273D68B90000B863 /* ShortcutsView.swift */; };
+		796F6EEE273D68B90000B863 /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EEC273D68B90000B863 /* ShortcutsView.swift */; };
+		796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135C2272FEBD300483096 /* TaskButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,9 @@
 		792135B4272C266300483096 /* SimpleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleError.swift; sourceTree = "<group>"; };
 		792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncThrowingSequence.swift; sourceTree = "<group>"; };
 		792135C2272FEBD300483096 /* TaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskButton.swift; sourceTree = "<group>"; };
+		796F6EE8273D49FA0000B863 /* AllMyBase (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AllMyBase (iOS).entitlements"; sourceTree = "<group>"; };
+		796F6EE9273D49FB0000B863 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HomeKit.framework; sourceTree = DEVELOPER_DIR; };
+		796F6EEC273D68B90000B863 /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79213593272C239200483096 /* Service in Frameworks */,
+				796F6EEA273D49FB0000B863 /* HomeKit.framework in Frameworks */,
 				7921357D272C0CDC00483096 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				79213579272C0CDC00483096 /* FirebaseFirestore in Frameworks */,
 				7921357B272C0CDC00483096 /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -134,6 +142,7 @@
 		79213535272C08F800483096 = {
 			isa = PBXGroup;
 			children = (
+				796F6EE8273D49FA0000B863 /* AllMyBase (iOS).entitlements */,
 				7921357E272C0D4600483096 /* GoogleService-Info.plist */,
 				7921353A272C08F800483096 /* Shared */,
 				79213549272C08F900483096 /* macOS */,
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				79213596272C24BB00483096 /* Helpers */,
+				796F6EEB273D689E0000B863 /* Shortcuts */,
 				7921358D272C1C9200483096 /* Timesheet */,
 				7921353B272C08F800483096 /* AllMyBaseApp.swift */,
 				7921353D272C08F900483096 /* Assets.xcassets */,
@@ -195,6 +205,7 @@
 		79213581272C0E3600483096 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				796F6EE9273D49FB0000B863 /* HomeKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +273,14 @@
 				792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */,
 			);
 			path = StdLib;
+			sourceTree = "<group>";
+		};
+		796F6EEB273D689E0000B863 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				796F6EEC273D68B90000B863 /* ShortcutsView.swift */,
+			);
+			path = Shortcuts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213565272C08F900483096 /* TimesheetView.swift in Sources */,
 				792135B5272C266300483096 /* SimpleError.swift in Sources */,
 				79213563272C08F900483096 /* AllMyBaseApp.swift in Sources */,
@@ -465,8 +485,10 @@
 				792135AC272C25ED00483096 /* Throw.swift in Sources */,
 				7921359F272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				792135B3272C263200483096 /* Absurd.swift in Sources */,
+				796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */,
 				792135B1272C263200483096 /* With.swift in Sources */,
 				792135A1272C25AF00483096 /* Query+Async.swift in Sources */,
+				796F6EEE273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213590272C1CAC00483096 /* WorkItem.swift in Sources */,
 				79213599272C24D000483096 /* Foundation+SampleData.swift.swift in Sources */,
 				792135BD272C2C9B00483096 /* AsyncThrowingSequence.swift in Sources */,
@@ -623,6 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AllMyBase (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76EHURWG2W;
@@ -653,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AllMyBase (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76EHURWG2W;

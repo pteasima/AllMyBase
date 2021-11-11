@@ -12,7 +12,8 @@ struct AllMyBaseApp: App {
   var body: some Scene {
     WindowGroup {
 //      TimesheetView()
-      TaskButton_Previews.previews
+//      TaskButton_Previews.previews
+        ShortcutsView()
     }
   }
 }
