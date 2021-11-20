@@ -1,11 +1,5 @@
-//
-//  ShortcutsView.swift
-//  AllMyBase
-//
-//  Created by Petr Šíma on 11.11.2021.
-//
-
 import SwiftUI
+
 
 struct ShortcutsView: View {
     @Environment(\.openURL) private var openURL
@@ -19,6 +13,11 @@ struct ShortcutsView: View {
             }
         } label: {
             Text("Hello, World!")
+        }
+        .throwingLifetimeTask {
+            DistributedNotificationCenter.default().addObserver(forName: .init(rawValue: "com.apple.MultitouchSupport.HID.DeviceAdded"), object: nil, queue: nil) {
+                print("notification", $0)
+            }
         }
         
     }

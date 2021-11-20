@@ -50,6 +50,10 @@
 		796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EEC273D68B90000B863 /* ShortcutsView.swift */; };
 		796F6EEE273D68B90000B863 /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EEC273D68B90000B863 /* ShortcutsView.swift */; };
 		796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792135C2272FEBD300483096 /* TaskButton.swift */; };
+		796F6EF4273D817E0000B863 /* LifetimeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EF3273D817E0000B863 /* LifetimeTask.swift */; };
+		796F6EF5273D817E0000B863 /* LifetimeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EF3273D817E0000B863 /* LifetimeTask.swift */; };
+		796F6EF7273D81AA0000B863 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EF6273D81AA0000B863 /* Reference.swift */; };
+		796F6EF8273D81AA0000B863 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796F6EF6273D81AA0000B863 /* Reference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,8 @@
 		796F6EE8273D49FA0000B863 /* AllMyBase (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AllMyBase (iOS).entitlements"; sourceTree = "<group>"; };
 		796F6EE9273D49FB0000B863 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HomeKit.framework; sourceTree = DEVELOPER_DIR; };
 		796F6EEC273D68B90000B863 /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
+		796F6EF3273D817E0000B863 /* LifetimeTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifetimeTask.swift; sourceTree = "<group>"; };
+		796F6EF6273D81AA0000B863 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +259,7 @@
 		792135A3272C25D000483096 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				796F6EF3273D817E0000B863 /* LifetimeTask.swift */,
 				792135C2272FEBD300483096 /* TaskButton.swift */,
 			);
 			path = SwiftUI;
@@ -270,6 +277,7 @@
 		792135BA272C2C8D00483096 /* StdLib */ = {
 			isa = PBXGroup;
 			children = (
+				796F6EF6273D81AA0000B863 /* Reference.swift */,
 				792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */,
 			);
 			path = StdLib;
@@ -459,11 +467,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796F6EF7273D81AA0000B863 /* Reference.swift in Sources */,
 				796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213565272C08F900483096 /* TimesheetView.swift in Sources */,
 				792135B5272C266300483096 /* SimpleError.swift in Sources */,
 				79213563272C08F900483096 /* AllMyBaseApp.swift in Sources */,
 				792135AB272C25ED00483096 /* Throw.swift in Sources */,
+				796F6EF4273D817E0000B863 /* LifetimeTask.swift in Sources */,
 				7921359E272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				792135B2272C263200483096 /* Absurd.swift in Sources */,
 				792135C3272FEBD300483096 /* TaskButton.swift in Sources */,
@@ -479,11 +489,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796F6EF8273D81AA0000B863 /* Reference.swift in Sources */,
 				79213566272C08F900483096 /* TimesheetView.swift in Sources */,
 				792135B6272C266300483096 /* SimpleError.swift in Sources */,
 				79213564272C08F900483096 /* AllMyBaseApp.swift in Sources */,
 				792135AC272C25ED00483096 /* Throw.swift in Sources */,
 				7921359F272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
+				796F6EF5273D817E0000B863 /* LifetimeTask.swift in Sources */,
 				792135B3272C263200483096 /* Absurd.swift in Sources */,
 				796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */,
 				792135B1272C263200483096 /* With.swift in Sources */,
