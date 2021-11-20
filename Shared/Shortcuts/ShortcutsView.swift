@@ -15,9 +15,9 @@ struct ShortcutsView: View {
             Text("Hello, World!")
         }
         .throwingLifetimeTask {
-            DistributedNotificationCenter.default().addObserver(forName: .init(rawValue: "com.apple.MultitouchSupport.HID.DeviceAdded"), object: nil, queue: nil) {
-                print("notification", $0)
-            }
+//            DistributedNotificationCenter.default().addObserver(forName: .init(rawValue: "com.apple.MultitouchSupport.HID.DeviceAdded"), object: nil, queue: nil) {
+//                print("notification", $0)
+//            }
         }
         
     }

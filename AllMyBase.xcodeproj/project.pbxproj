@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790F74E7274925390044A013 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74E6274925390044A013 /* NoteView.swift */; };
+		790F74E8274925390044A013 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74E6274925390044A013 /* NoteView.swift */; };
+		790F74EB2749265E0044A013 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 790F74EA2749265E0044A013 /* Tagged */; };
 		79213554272C08F900483096 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213553272C08F900483096 /* Tests_iOS.swift */; };
 		79213556272C08F900483096 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213555272C08F900483096 /* Tests_iOSLaunchTests.swift */; };
 		79213560272C08F900483096 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921355F272C08F900483096 /* Tests_macOS.swift */; };
@@ -74,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790F74E6274925390044A013 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		7921353B272C08F800483096 /* AllMyBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyBaseApp.swift; sourceTree = "<group>"; };
 		7921353C272C08F800483096 /* TimesheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetView.swift; sourceTree = "<group>"; };
 		7921353D272C08F900483096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F74EB2749265E0044A013 /* Tagged in Frameworks */,
 				79213593272C239200483096 /* Service in Frameworks */,
 				796F6EEA273D49FB0000B863 /* HomeKit.framework in Frameworks */,
 				7921357D272C0CDC00483096 /* FirebaseFirestoreSwift-Beta in Frameworks */,
@@ -145,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790F74E5274925170044A013 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				790F74E6274925390044A013 /* NoteView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		79213535272C08F800483096 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +178,7 @@
 				79213596272C24BB00483096 /* Helpers */,
 				796F6EEB273D689E0000B863 /* Shortcuts */,
 				7921358D272C1C9200483096 /* Timesheet */,
+				790F74E5274925170044A013 /* Notes */,
 				7921353B272C08F800483096 /* AllMyBaseApp.swift */,
 				7921353D272C08F900483096 /* Assets.xcassets */,
 			);
@@ -312,6 +326,7 @@
 				7921357A272C0CDC00483096 /* FirebaseFirestoreCombine-Community */,
 				7921357C272C0CDC00483096 /* FirebaseFirestoreSwift-Beta */,
 				79213592272C239200483096 /* Service */,
+				790F74EA2749265E0044A013 /* Tagged */,
 			);
 			productName = "AllMyBase (iOS)";
 			productReference = 79213542272C08F900483096 /* AllMyBase.app */;
@@ -414,6 +429,7 @@
 			packageReferences = (
 				79213577272C0CDC00483096 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				79213591272C239200483096 /* XCRemoteSwiftPackageReference "Service" */,
+				790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */,
 			);
 			productRefGroup = 79213543272C08F900483096 /* Products */;
 			projectDirPath = "";
@@ -477,6 +493,7 @@
 				7921359E272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				792135B2272C263200483096 /* Absurd.swift in Sources */,
 				792135C3272FEBD300483096 /* TaskButton.swift in Sources */,
+				790F74E7274925390044A013 /* NoteView.swift in Sources */,
 				792135B0272C263200483096 /* With.swift in Sources */,
 				792135A0272C25AF00483096 /* Query+Async.swift in Sources */,
 				7921358F272C1CAC00483096 /* WorkItem.swift in Sources */,
@@ -499,6 +516,7 @@
 				792135B3272C263200483096 /* Absurd.swift in Sources */,
 				796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */,
 				792135B1272C263200483096 /* With.swift in Sources */,
+				790F74E8274925390044A013 /* NoteView.swift in Sources */,
 				792135A1272C25AF00483096 /* Query+Async.swift in Sources */,
 				796F6EEE273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213590272C1CAC00483096 /* WorkItem.swift in Sources */,
@@ -923,6 +941,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		79213577272C0CDC00483096 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -942,6 +968,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		790F74EA2749265E0044A013 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
 		79213578272C0CDC00483096 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 79213577272C0CDC00483096 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
