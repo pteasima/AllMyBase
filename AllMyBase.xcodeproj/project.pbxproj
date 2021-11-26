@@ -20,6 +20,8 @@
 		790F751F2751963F0044A013 /* Date+EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */; };
 		790F7521275199D50044A013 /* Binding+OnSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7520275199D50044A013 /* Binding+OnSet.swift */; };
 		790F7522275199D50044A013 /* Binding+OnSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7520275199D50044A013 /* Binding+OnSet.swift */; };
+		790F75242751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
+		790F75252751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
 		79213554272C08F900483096 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213553272C08F900483096 /* Tests_iOS.swift */; };
 		79213556272C08F900483096 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213555272C08F900483096 /* Tests_iOSLaunchTests.swift */; };
 		79213560272C08F900483096 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921355F272C08F900483096 /* Tests_macOS.swift */; };
@@ -93,6 +95,7 @@
 		790F751A275193740044A013 /* DaysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysListView.swift; sourceTree = "<group>"; };
 		790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EnvironmentKey.swift"; sourceTree = "<group>"; };
 		790F7520275199D50044A013 /* Binding+OnSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+OnSet.swift"; sourceTree = "<group>"; };
+		790F75232751A4940044A013 /* Binding+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Map.swift"; sourceTree = "<group>"; };
 		7921353B272C08F800483096 /* AllMyBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyBaseApp.swift; sourceTree = "<group>"; };
 		7921353C272C08F800483096 /* TimesheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetView.swift; sourceTree = "<group>"; };
 		7921353D272C08F900483096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -313,6 +316,7 @@
 				796F6EF3273D817E0000B863 /* LifetimeTask.swift */,
 				792135C2272FEBD300483096 /* TaskButton.swift */,
 				790F7520275199D50044A013 /* Binding+OnSet.swift */,
+				790F75232751A4940044A013 /* Binding+Map.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -542,6 +546,7 @@
 				792135C3272FEBD300483096 /* TaskButton.swift in Sources */,
 				790F74E7274925390044A013 /* NoteView.swift in Sources */,
 				792135B0272C263200483096 /* With.swift in Sources */,
+				790F75242751A4940044A013 /* Binding+Map.swift in Sources */,
 				792135A0272C25AF00483096 /* Query+Async.swift in Sources */,
 				7921358F272C1CAC00483096 /* WorkItem.swift in Sources */,
 				79213598272C24D000483096 /* Foundation+SampleData.swift.swift in Sources */,
@@ -553,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F75252751A4940044A013 /* Binding+Map.swift in Sources */,
 				796F6EF8273D81AA0000B863 /* Reference.swift in Sources */,
 				79213566272C08F900483096 /* TimesheetView.swift in Sources */,
 				792135B6272C266300483096 /* SimpleError.swift in Sources */,
