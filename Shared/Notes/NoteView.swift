@@ -21,11 +21,16 @@ struct NoteView: View {
   
   var body: some View {
     NavigationView  {
-      TextEditor(text: $note.content)
-        .onChange(of: note) { _ in updateNote() }
+      TextEditor(
+        text: $note.content
+          .onSet { _ in
+            updateNote()
+          }
+      )
         .throwingLifetimeTask(perform: observeNote)
         .navigationTitle("Note: \(note.id.rawValue)")
     }
+    .navigationViewStyle(StackNavigationViewStyle())
   }
   
   private var noteDocument: DocumentReference {
@@ -35,15 +40,15 @@ struct NoteView: View {
   }
   
   private func observeNote() async throws {
-//    let query = noteDocument
-//      .observe()
-//      .compactMap {
-//        try $0.data(as: Note.self)
-//      }
-//    for try await newValue in query {
-//      print(newValue)
-//      note = newValue
-//    }
+    let query = noteDocument
+      .observe()
+      .compactMap {
+        try $0.data(as: Note.self)
+      }
+    for try await newValue in query {
+      print(newValue)
+      note = newValue
+    }
   }
   
   private func updateNote() {

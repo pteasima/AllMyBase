@@ -8,12 +8,12 @@ struct AllMyBaseApp: App {
 
   init() {
     FirebaseApp.configure()
-    let settings = Firestore.firestore().settings
-    settings.host = "localhost:8080"
-    //TODO: this comes from official docs, but is it needed? Can we really not use persistence with emulator?
-    settings.isPersistenceEnabled = false
-    settings.isSSLEnabled = false
-    Firestore.firestore().settings = settings
+//    let settings = Firestore.firestore().settings
+//    settings.host = "localhost:8080"
+//    //TODO: this comes from official docs, but is it needed? Can we really not use persistence with emulator?
+//    settings.isPersistenceEnabled = false
+//    settings.isSSLEnabled = false
+//    Firestore.firestore().settings = settings
   }
   
   var body: some Scene {
