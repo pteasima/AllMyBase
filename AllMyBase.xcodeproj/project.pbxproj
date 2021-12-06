@@ -10,6 +10,20 @@
 		790F74E7274925390044A013 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74E6274925390044A013 /* NoteView.swift */; };
 		790F74E8274925390044A013 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74E6274925390044A013 /* NoteView.swift */; };
 		790F74EB2749265E0044A013 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 790F74EA2749265E0044A013 /* Tagged */; };
+		790F74F1274AB20E0044A013 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 790F74F0274AB20E0044A013 /* CasePaths */; };
+		790F74F3274AB2200044A013 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 790F74F2274AB2200044A013 /* Tagged */; };
+		790F74F5274AB2200044A013 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 790F74F4274AB2200044A013 /* CasePaths */; };
+		790F74F7274AB2B40044A013 /* OptionalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74F6274AB2B40044A013 /* OptionalProtocol.swift */; };
+		790F74F8274AB2B40044A013 /* OptionalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F74F6274AB2B40044A013 /* OptionalProtocol.swift */; };
+		790F751B275193740044A013 /* DaysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F751A275193740044A013 /* DaysListView.swift */; };
+		790F751C2751938D0044A013 /* DaysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F751A275193740044A013 /* DaysListView.swift */; };
+		790F751F2751963F0044A013 /* Date+EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */; };
+		790F7521275199D50044A013 /* Binding+OnSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7520275199D50044A013 /* Binding+OnSet.swift */; };
+		790F7522275199D50044A013 /* Binding+OnSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7520275199D50044A013 /* Binding+OnSet.swift */; };
+		790F75242751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
+		790F75252751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
+		790F7535275E3DBA0044A013 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7534275E3DBA0044A013 /* DayDetailView.swift */; };
+		790F7536275E3DBA0044A013 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7534275E3DBA0044A013 /* DayDetailView.swift */; };
 		79213554272C08F900483096 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213553272C08F900483096 /* Tests_iOS.swift */; };
 		79213556272C08F900483096 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213555272C08F900483096 /* Tests_iOSLaunchTests.swift */; };
 		79213560272C08F900483096 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921355F272C08F900483096 /* Tests_macOS.swift */; };
@@ -78,6 +92,13 @@
 
 /* Begin PBXFileReference section */
 		790F74E6274925390044A013 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		790F74F6274AB2B40044A013 /* OptionalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalProtocol.swift; sourceTree = "<group>"; };
+		790F7518274E892E0044A013 /* AllMyBase--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AllMyBase--macOS--Info.plist"; sourceTree = "<group>"; };
+		790F751A275193740044A013 /* DaysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysListView.swift; sourceTree = "<group>"; };
+		790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EnvironmentKey.swift"; sourceTree = "<group>"; };
+		790F7520275199D50044A013 /* Binding+OnSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+OnSet.swift"; sourceTree = "<group>"; };
+		790F75232751A4940044A013 /* Binding+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Map.swift"; sourceTree = "<group>"; };
+		790F7534275E3DBA0044A013 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
 		7921353B272C08F800483096 /* AllMyBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyBaseApp.swift; sourceTree = "<group>"; };
 		7921353C272C08F800483096 /* TimesheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetView.swift; sourceTree = "<group>"; };
 		7921353D272C08F900483096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +139,7 @@
 				796F6EEA273D49FB0000B863 /* HomeKit.framework in Frameworks */,
 				7921357D272C0CDC00483096 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				79213579272C0CDC00483096 /* FirebaseFirestore in Frameworks */,
+				790F74F1274AB20E0044A013 /* CasePaths in Frameworks */,
 				7921357B272C0CDC00483096 /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,10 +148,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F74F3274AB2200044A013 /* Tagged in Frameworks */,
 				79213595272C239F00483096 /* Service in Frameworks */,
 				79213587272C0E3600483096 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				79213583272C0E3600483096 /* FirebaseFirestore in Frameworks */,
 				79213585272C0E3600483096 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				790F74F5274AB2200044A013 /* CasePaths in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +182,36 @@
 			path = Notes;
 			sourceTree = "<group>";
 		};
+		790F75192751935F0044A013 /* AllMyDays */ = {
+			isa = PBXGroup;
+			children = (
+				790F751D275195FA0044A013 /* Services */,
+				790F7533275E3D9B0044A013 /* View */,
+			);
+			path = AllMyDays;
+			sourceTree = "<group>";
+		};
+		790F751D275195FA0044A013 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		790F7533275E3D9B0044A013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				790F751A275193740044A013 /* DaysListView.swift */,
+				790F7534275E3DBA0044A013 /* DayDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		79213535272C08F800483096 = {
 			isa = PBXGroup;
 			children = (
+				790F7518274E892E0044A013 /* AllMyBase--macOS--Info.plist */,
 				796F6EE8273D49FA0000B863 /* AllMyBase (iOS).entitlements */,
 				7921357E272C0D4600483096 /* GoogleService-Info.plist */,
 				7921353A272C08F800483096 /* Shared */,
@@ -176,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				79213596272C24BB00483096 /* Helpers */,
+				790F75192751935F0044A013 /* AllMyDays */,
 				796F6EEB273D689E0000B863 /* Shortcuts */,
 				7921358D272C1C9200483096 /* Timesheet */,
 				790F74E5274925170044A013 /* Notes */,
@@ -275,6 +327,8 @@
 			children = (
 				796F6EF3273D817E0000B863 /* LifetimeTask.swift */,
 				792135C2272FEBD300483096 /* TaskButton.swift */,
+				790F7520275199D50044A013 /* Binding+OnSet.swift */,
+				790F75232751A4940044A013 /* Binding+Map.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -293,6 +347,7 @@
 			children = (
 				796F6EF6273D81AA0000B863 /* Reference.swift */,
 				792135BB272C2C9B00483096 /* AsyncThrowingSequence.swift */,
+				790F74F6274AB2B40044A013 /* OptionalProtocol.swift */,
 			);
 			path = StdLib;
 			sourceTree = "<group>";
@@ -327,6 +382,7 @@
 				7921357C272C0CDC00483096 /* FirebaseFirestoreSwift-Beta */,
 				79213592272C239200483096 /* Service */,
 				790F74EA2749265E0044A013 /* Tagged */,
+				790F74F0274AB20E0044A013 /* CasePaths */,
 			);
 			productName = "AllMyBase (iOS)";
 			productReference = 79213542272C08F900483096 /* AllMyBase.app */;
@@ -350,6 +406,8 @@
 				79213584272C0E3600483096 /* FirebaseFirestoreCombine-Community */,
 				79213586272C0E3600483096 /* FirebaseFirestoreSwift-Beta */,
 				79213594272C239F00483096 /* Service */,
+				790F74F2274AB2200044A013 /* Tagged */,
+				790F74F4274AB2200044A013 /* CasePaths */,
 			);
 			productName = "AllMyBase (macOS)";
 			productReference = 79213548272C08F900483096 /* AllMyBase.app */;
@@ -430,6 +488,7 @@
 				79213577272C0CDC00483096 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				79213591272C239200483096 /* XCRemoteSwiftPackageReference "Service" */,
 				790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+				790F74EF274AB20E0044A013 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
 			);
 			productRefGroup = 79213543272C08F900483096 /* Products */;
 			projectDirPath = "";
@@ -483,18 +542,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F7535275E3DBA0044A013 /* DayDetailView.swift in Sources */,
 				796F6EF7273D81AA0000B863 /* Reference.swift in Sources */,
 				796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213565272C08F900483096 /* TimesheetView.swift in Sources */,
+				790F74F7274AB2B40044A013 /* OptionalProtocol.swift in Sources */,
 				792135B5272C266300483096 /* SimpleError.swift in Sources */,
+				790F7521275199D50044A013 /* Binding+OnSet.swift in Sources */,
 				79213563272C08F900483096 /* AllMyBaseApp.swift in Sources */,
 				792135AB272C25ED00483096 /* Throw.swift in Sources */,
 				796F6EF4273D817E0000B863 /* LifetimeTask.swift in Sources */,
+				790F751F2751963F0044A013 /* Date+EnvironmentKey.swift in Sources */,
 				7921359E272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
+				790F751B275193740044A013 /* DaysListView.swift in Sources */,
 				792135B2272C263200483096 /* Absurd.swift in Sources */,
 				792135C3272FEBD300483096 /* TaskButton.swift in Sources */,
 				790F74E7274925390044A013 /* NoteView.swift in Sources */,
 				792135B0272C263200483096 /* With.swift in Sources */,
+				790F75242751A4940044A013 /* Binding+Map.swift in Sources */,
 				792135A0272C25AF00483096 /* Query+Async.swift in Sources */,
 				7921358F272C1CAC00483096 /* WorkItem.swift in Sources */,
 				79213598272C24D000483096 /* Foundation+SampleData.swift.swift in Sources */,
@@ -506,14 +571,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F75252751A4940044A013 /* Binding+Map.swift in Sources */,
 				796F6EF8273D81AA0000B863 /* Reference.swift in Sources */,
 				79213566272C08F900483096 /* TimesheetView.swift in Sources */,
 				792135B6272C266300483096 /* SimpleError.swift in Sources */,
+				790F74F8274AB2B40044A013 /* OptionalProtocol.swift in Sources */,
 				79213564272C08F900483096 /* AllMyBaseApp.swift in Sources */,
+				790F7536275E3DBA0044A013 /* DayDetailView.swift in Sources */,
 				792135AC272C25ED00483096 /* Throw.swift in Sources */,
 				7921359F272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				796F6EF5273D817E0000B863 /* LifetimeTask.swift in Sources */,
 				792135B3272C263200483096 /* Absurd.swift in Sources */,
+				790F7522275199D50044A013 /* Binding+OnSet.swift in Sources */,
+				790F751C2751938D0044A013 /* DaysListView.swift in Sources */,
 				796F6EEF273D6A210000B863 /* TaskButton.swift in Sources */,
 				792135B1272C263200483096 /* With.swift in Sources */,
 				790F74E8274925390044A013 /* NoteView.swift in Sources */,
@@ -746,6 +816,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AllMyBase--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -774,6 +845,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AllMyBase--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,6 +1021,14 @@
 				kind = branch;
 			};
 		};
+		790F74EF274AB20E0044A013 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-case-paths.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 		79213577272C0CDC00483096 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -972,6 +1052,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */;
 			productName = Tagged;
+		};
+		790F74F0274AB20E0044A013 /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790F74EF274AB20E0044A013 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+		790F74F2274AB2200044A013 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790F74E92749265E0044A013 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		790F74F4274AB2200044A013 /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790F74EF274AB20E0044A013 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
 		};
 		79213578272C0CDC00483096 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

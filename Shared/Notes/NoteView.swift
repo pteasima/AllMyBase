@@ -15,23 +15,18 @@ extension Note {
 }
 
 struct NoteView: View {
-  @Environment(\.[key: \Throw.self]) private var `throw`
-  
   @State private var note: Note = .sample
-  
   var body: some View {
     NavigationView  {
-      TextEditor(text: $note.content)
-        .onChange(of: note) { _ in updateNote() }
+      EditNoteView(note: Binding {
+        note
+      } set: {
+        if let newValue = $0 { note = newValue }
+      })
         .throwingLifetimeTask(perform: observeNote)
         .navigationTitle("Note: \(note.id.rawValue)")
     }
-  }
-  
-  private var noteDocument: DocumentReference {
-    Firestore.firestore()
-      .collection("notes")
-      .document(note.id.rawValue)
+    .navigationViewStyle(StackNavigationViewStyle())
   }
   
   private func observeNote() async throws {
@@ -46,10 +41,33 @@ struct NoteView: View {
     }
   }
   
-  private func updateNote() {
-    `throw`.try {
-      try noteDocument.setData(from: note)
+  private var noteDocument: DocumentReference {
+    Firestore.firestore()
+      .collection("notes")
+      .document(note.id.rawValue)
+  }
+}
+
+struct EditNoteView: View {
+  @Environment(\.[key: \Throw.self]) private var `throw`
+  
+  @Binding var note: Note?
+  
+  var body: some View {
+    if let $note = Binding($note) {
+      TextEditor(
+        text: $note.content
+          .onSet { _ in
+            updateNote()
+          }
+      )
     }
+  }
+  
+  private func updateNote() {
+    //    `throw`.try {
+    //      try noteDocument.setData(from: note)
+    //    }
   }
 }
 
