@@ -22,6 +22,8 @@
 		790F7522275199D50044A013 /* Binding+OnSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7520275199D50044A013 /* Binding+OnSet.swift */; };
 		790F75242751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
 		790F75252751A4940044A013 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F75232751A4940044A013 /* Binding+Map.swift */; };
+		790F7535275E3DBA0044A013 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7534275E3DBA0044A013 /* DayDetailView.swift */; };
+		790F7536275E3DBA0044A013 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7534275E3DBA0044A013 /* DayDetailView.swift */; };
 		79213554272C08F900483096 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213553272C08F900483096 /* Tests_iOS.swift */; };
 		79213556272C08F900483096 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79213555272C08F900483096 /* Tests_iOSLaunchTests.swift */; };
 		79213560272C08F900483096 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7921355F272C08F900483096 /* Tests_macOS.swift */; };
@@ -96,6 +98,7 @@
 		790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EnvironmentKey.swift"; sourceTree = "<group>"; };
 		790F7520275199D50044A013 /* Binding+OnSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+OnSet.swift"; sourceTree = "<group>"; };
 		790F75232751A4940044A013 /* Binding+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Map.swift"; sourceTree = "<group>"; };
+		790F7534275E3DBA0044A013 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
 		7921353B272C08F800483096 /* AllMyBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyBaseApp.swift; sourceTree = "<group>"; };
 		7921353C272C08F800483096 /* TimesheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetView.swift; sourceTree = "<group>"; };
 		7921353D272C08F900483096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				790F751D275195FA0044A013 /* Services */,
-				790F751A275193740044A013 /* DaysListView.swift */,
+				790F7533275E3D9B0044A013 /* View */,
 			);
 			path = AllMyDays;
 			sourceTree = "<group>";
@@ -194,6 +197,15 @@
 				790F751E2751963F0044A013 /* Date+EnvironmentKey.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		790F7533275E3D9B0044A013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				790F751A275193740044A013 /* DaysListView.swift */,
+				790F7534275E3DBA0044A013 /* DayDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		79213535272C08F800483096 = {
@@ -530,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790F7535275E3DBA0044A013 /* DayDetailView.swift in Sources */,
 				796F6EF7273D81AA0000B863 /* Reference.swift in Sources */,
 				796F6EED273D68B90000B863 /* ShortcutsView.swift in Sources */,
 				79213565272C08F900483096 /* TimesheetView.swift in Sources */,
@@ -564,6 +577,7 @@
 				792135B6272C266300483096 /* SimpleError.swift in Sources */,
 				790F74F8274AB2B40044A013 /* OptionalProtocol.swift in Sources */,
 				79213564272C08F900483096 /* AllMyBaseApp.swift in Sources */,
+				790F7536275E3DBA0044A013 /* DayDetailView.swift in Sources */,
 				792135AC272C25ED00483096 /* Throw.swift in Sources */,
 				7921359F272C25AF00483096 /* DocumentReference+Async.swift in Sources */,
 				796F6EF5273D817E0000B863 /* LifetimeTask.swift in Sources */,
